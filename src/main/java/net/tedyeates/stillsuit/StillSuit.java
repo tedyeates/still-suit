@@ -37,6 +37,7 @@ public class StillSuit
     public static final String MODID = "stillsuit";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
+   
 
     public StillSuit()
     {
@@ -44,7 +45,6 @@ public class StillSuit
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -56,20 +56,20 @@ public class StillSuit
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+    
     }
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+       
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
-
+        
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -79,7 +79,7 @@ public class StillSuit
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            
         }
     }
 }
